@@ -25,7 +25,7 @@ export default {
         <h1>Lista progetti</h1>
         <div class="container">
           <div class="row gy-4">
-            <div class="col-md-4" v-for="project in projects">
+            <div class="col-md-6 col-lg-4" v-for="project in projects">
               <ProjectCard :info="project" />
             </div>
           </div>

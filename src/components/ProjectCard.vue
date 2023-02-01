@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     truncateText(text) {
-        return text.substring(0, 250) + "...";
+        return text.substring(0, 200) + "...";
     }
   },
 };
@@ -28,12 +28,12 @@ export default {
             <div class="mb-3" v-else>
                 <strong>Nessuna tipologia</strong>
             </div>
-            <div class="mb-3" v-if="info.technologies">
+            <div class="mb-3" v-if="(info.technologies != '')">
                 Tecnologie:
-                <span class="badge text-bg-primary ms-1"></span>
+                <span class="badge text-bg-primary ms-1" v-for="(technologies, index) in info.technologies" :key="index">{{ technologies.name }}</span>
             </div>
             <p class="card-text" v-if="info.description">{{ truncateText(info.description) }}</p>
-            <div>
+            <div class="mb-3">
                 Cliente:
                 <strong>{{ info.customer }}</strong>
             </div>
