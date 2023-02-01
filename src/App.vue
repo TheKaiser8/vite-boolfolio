@@ -1,15 +1,22 @@
 <script>
-import AppTitle from './components/AppTitle.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+
 export default {
   components: {
-    AppTitle
+    AppHeader,
+    AppMain,
+    AppFooter
   }
 }
 </script>
 
 <template>
   <div class="container text-center">
-    <AppTitle/>
+    <AppHeader/>
+    <AppMain/>
+    <AppFooter/>
   </div>
 </template>
 
