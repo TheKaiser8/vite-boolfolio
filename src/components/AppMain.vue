@@ -6,8 +6,10 @@ export default {
 </script>
 
 <template>
-    <main>
-      <router-view></router-view>
+    <main class="bg-light">
+      <div class="container py-3">
+        <router-view></router-view>
+      </div>
     </main>
 </template>
 
