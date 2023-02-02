@@ -22,8 +22,8 @@ export default {
 
 <template>
     <section>
-        <h1>Lista progetti</h1>
         <div class="container">
+          <h3 class="text-decoration-underline my-3">Lista progetti</h3>
           <div class="row gy-4">
             <div class="col-md-6 col-lg-4" v-for="project in projects">
               <ProjectCard :info="project" />
