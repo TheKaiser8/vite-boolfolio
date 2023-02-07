@@ -12,6 +12,7 @@ export default {
         <ul class="d-flex list-unstyled mb-0">
           <li class="ms-2"><router-link :to="{ name: 'homepage' }" class="text-decoration-none text-white fw-bold p-2">Homepage</router-link></li>
           <li class="ms-2"><router-link :to="{ name: 'about-us' }" class="text-decoration-none text-white fw-bold p-2">Chi siamo</router-link></li>
+          <li class="ms-2"><router-link :to="{ name: 'types' }" class="text-decoration-none text-white fw-bold p-2">Tipologie</router-link></li>
         </ul>
       </nav>
     </div>

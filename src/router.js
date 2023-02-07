@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from './pages/HomePage.vue';
 import AboutUs from './pages/AboutUs.vue';
 import SingleProject from './pages/SingleProject.vue';
+import TypesPage from './pages/TypesPage.vue';
 import Page404 from './pages/Page404.vue';
 
 const router = createRouter({
@@ -24,6 +25,11 @@ const router = createRouter({
             path: '/dettagli-progetto/:slug',
             name: 'single-project',
             component: SingleProject,
+        },
+        {
+            path: '/tipologie',
+            name: 'types',
+            component: TypesPage,
         },
 
         // Rotta che gestisce l'errore della homepage (se l'utente inserisce manualmente una parte url (dopo /) errata)
